@@ -53,11 +53,11 @@
 }
 
 .accent-background {
-  --background-color: #ffffff;
+  --background-color: ##3366cc;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
-  --surface-color: #ffffff;
+  --surface-color: ##3366cc;
   --contrast-color: #ffffff;
 }
 
