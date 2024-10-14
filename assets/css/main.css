@@ -60,7 +60,9 @@
   --surface-color: ##000000;
   --contrast-color: #ffffff;
 }
-
+.table{
+  --background-color: #333333;
+}
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
