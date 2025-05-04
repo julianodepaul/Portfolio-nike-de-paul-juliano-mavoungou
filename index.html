@@ -777,6 +777,19 @@
               <div class="col-lg-7 about-info">
                 <img src="assets/img/portfolio/Flipb.png" class="img-fluid" alt="">
               </div>
+              <div class="col-lg-7 about-info">
+               <h3><strong>Synthèse de veille – Mai 2025 : Surveillance réseau</strong></h3>
+                <p>
+                  Plusieurs vulnérabilités critiques ont été relevées sur les services RDP et SMB, particulièrement via les ports 3389 et 445.</br>
+                  L’outil Zabbix a été identifié comme une solution efficace pour surveiller les services réseau en continu, notamment avec ses fonctions de déclenchement d’alertes en cas de dépassement de seuils ou d’interruption de services.</br>
+                  Recommandations :</br>
+                    <ul>
+                       <li>Restreindre l’exposition des ports critiques aux réseaux internes.</li>
+                       <li>Mettre en œuvre un scan hebdomadaire avec Nmap pour détecter les ouvertures inattendues.</li>
+                       <li>Utiliser Wireshark pour analyser le trafic réseau sur les ports sensibles.</li>
+                    </ul>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -818,7 +831,24 @@
               <div class="faq-item">
                 <h3><span class="num">5.</span> <span>Publier</span></h3>
                 <div class="faq-content">
-                  <p></p>
+                  <p>.</p>
+          
+                  <p>
+                    •	CVE-2025-26645 : Cette vulnérabilité permet une exécution de code à distance via une traversée de chemin relative lorsqu’un client RDP vulnérable se connecte à un serveur RDP malveillant.  
+
+	•	CVE-2025-27480 : Une vulnérabilité de type “use-after-free” dans le service Remote Desktop Gateway, permettant à un attaquant non authentifié d’exécuter du code arbitraire sur le système cible.  
+
+	•	CVE-2025-27487 : Un dépassement de tampon basé sur le tas dans le client Remote Desktop, permettant à un attaquant autorisé d’exécuter du code à distance.  
+
+Pour protéger vos systèmes contre ces vulnérabilités, il est recommandé de :
+
+	•	Appliquer les dernières mises à jour de sécurité fournies par Microsoft.
+
+	•	Restreindre l’accès au port RDP (3389) aux seuls utilisateurs autorisés, de préférence via un VPN ou des listes de contrôle d’accès (ACL).
+
+	•	Utiliser des outils de surveillance réseau tels que Nmap ou Wireshark pour détecter toute activité suspecte sur le port 3389.
+ 
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
